@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://yo-goto.github.io/anki-one'
 title: 'anki ONE'
 theme: 'PaperMod'
 languageCode: "ja-jp"
@@ -65,7 +65,7 @@ params:
 
   # githubでの編集提案    
   editPost:
-    URL: "https://github.com/<path_to_repo>/content" # あとで編集する githubのリポジトリへURL
+    URL: "https://github.com/yo-goto/anki-one" # あとで編集する githubのリポジトリへURL
     Text: "Githubで修正" # edit text
     appendFilePath: true # to append file path to Edit link  
   # for search
