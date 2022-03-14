@@ -1,2 +1,9 @@
+# general files
 .DS_store
+hugo-repo.code-workspace
+.hugo_build.lock
+
+# folder
 node_modules/
+.cache/
+.vscode/
