@@ -1,0 +1,30 @@
+{
+  "name": "hugo-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yo-goto/anki-one.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yo-goto/anki-one/issues"
+  },
+  "homepage": "https://github.com/yo-goto/anki-one#readme",
+  "devDependencies": {
+    "textlint": "^12.1.1",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
+  },
+  "volta": {
+    "node": "16.14.0",
+    "npm": "8.5.4"
+  }
+}
