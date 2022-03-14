@@ -91,7 +91,7 @@ markdown そものもがかなり便利なものなんですが、今回それ�
 これだけで YouTube の動画を埋め込むことができます。
 
 
-{{< YouTube RqZSZz6Zixc >}}
+{{< youtube RqZSZz6Zixc >}}
 
 
 ## メモをつなげる
@@ -116,7 +116,7 @@ PKB という概念がなくとも、私達は普段から情報をまとめた�
 
 はい。では実演動画です。
 
-{{< YouTube vBZDUIjFM60 >}}
+{{< youtube vBZDUIjFM60 >}}
 
 
 こういう感じですね。YouTube の動画で勉強するときですが、1 つの動画で知識が完結するということはあまり無いと思います。

@@ -23,7 +23,7 @@ Plugin Developer として Obsidian Community で有名な death.au 氏のポス
 
 実演動画です。めちゃくちゃ簡単にテーマの切り替えと改造用のスニペットコードを管理できるようになりました。
 
-{{< YouTube 79Qyn-GAbqk >}}
+{{< youtube 79Qyn-GAbqk >}}
 
 
 ## SASSとSCSSとは何か

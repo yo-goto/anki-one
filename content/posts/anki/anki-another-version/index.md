@@ -21,7 +21,7 @@ https://github.com/ankitects/anki/releases/
 
 Links: [How to Upgrade and Downgrade Anki Version (or use multiple!) - YouTube](https://www.youtube.com/watch?v=4Bqs_SzUWGE&ab_channel=TheAnKing)
 
-{{< YouTube 4Bqs_SzUWGE >}}
+{{< youtube 4Bqs_SzUWGE >}}
 
 - 最新版 anki をダウンロードする
 - 既存の `anki.app` の名前をバージョン名をつけて変更する(例: `Anki 2.1.35.app`)
