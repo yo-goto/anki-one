@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://yo-goto.github.io/anki-one/sitemap.xml

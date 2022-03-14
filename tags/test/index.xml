@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>test on anki ONE</title>
+    <link>https://yo-goto.github.io/anki-one/tags/test/</link>
+    <description>Recent content in test on anki ONE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/anki-one/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iFrame</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/frame-search-eventbtn/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/frame-search-eventbtn/</guid>
+      <description>iframeによる画像検索窓で視覚的に単語を覚える</description>
+    </item>
+    
+    <item>
+      <title>LLN (Language Learning with Netflix)</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/chrome-addon-languagelearningwithnetflix/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/chrome-addon-languagelearningwithnetflix/</guid>
+      <description>Netflixで英語を学びながらAnkiカード作成</description>
+    </item>
+    
+  </channel>
+</rss>

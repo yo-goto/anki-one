@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on anki ONE</title>
+    <link>https://yo-goto.github.io/anki-one/posts/</link>
+    <description>Recent content in Posts on anki ONE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/anki-one/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anki Another Version</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/anki-another-version/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/anki-another-version/</guid>
+      <description>Ankiの別バージョンをインストールする</description>
+    </item>
+    
+    <item>
+      <title>Prism.js</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/prism_codehighlight_into_anki/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/prism_codehighlight_into_anki/</guid>
+      <description>Anki に prism.js を入れる</description>
+    </item>
+    
+    <item>
+      <title>Custom SCSS/SASS</title>
+      <link>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-scss/</link>
+      <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-scss/</guid>
+      <description>ObsidianのスタイルをSCSSで作る</description>
+    </item>
+    
+    <item>
+      <title>TTS (Text To Speech)</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/audio-tts-pronunciation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/audio-tts-pronunciation/</guid>
+      <description>デバイスのTTSを利用してAnkiで合成音声に発音させる</description>
+    </item>
+    
+    <item>
+      <title>Custom CSS</title>
+      <link>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-custom-css/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-custom-css/</guid>
+      <description>Obsidianのスタイルを改造する</description>
+    </item>
+    
+    <item>
+      <title>iFrame Youtube Link</title>
+      <link>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-iframe-youtube/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-iframe-youtube/</guid>
+      <description>ObsidianにYoutubeの動画を埋め込む方法</description>
+    </item>
+    
+    <item>
+      <title>obsidian PKM Map</title>
+      <link>https://yo-goto.github.io/anki-one/posts/obsidian/links-obsidians/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/obsidian/links-obsidians/</guid>
+      <description>ObsidianにYoutubeの動画を埋め込む方法</description>
+    </item>
+    
+    <item>
+      <title>Fonts &amp; Text Decoration</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/font-and-textdecoration/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/font-and-textdecoration/</guid>
+      <description>フォントと文字装飾にまつわるお話</description>
+    </item>
+    
+    <item>
+      <title>iFrame</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/frame-search-eventbtn/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/frame-search-eventbtn/</guid>
+      <description>iframeによる画像検索窓で視覚的に単語を覚える</description>
+    </item>
+    
+    <item>
+      <title>LLN (Language Learning with Netflix)</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/chrome-addon-languagelearningwithnetflix/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/chrome-addon-languagelearningwithnetflix/</guid>
+      <description>Netflixで英語を学びながらAnkiカード作成</description>
+    </item>
+    
+    <item>
+      <title>Why Anki？</title>
+      <link>https://yo-goto.github.io/anki-one/posts/anki/mazuankiyorihajimeyo/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/anki-one/posts/anki/mazuankiyorihajimeyo/</guid>
+      <description>なぜAnkiなのか？</description>
+    </item>
+    
+  </channel>
+</rss>
