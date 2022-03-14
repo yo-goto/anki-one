@@ -12,25 +12,25 @@ aliases: [記事_iframeによる画像検索窓で視覚的に単語を覚える
 
 ![header](data/head_iframe.jpg)
 
-こんにちは､パダワンです｡いやー､Twitterって便利ですね｡Ankiユーザーさんから様々な知見を得られています｡また､Anki啓蒙活動が非常にやりやすいのでいいですね｡ちょっとTwitterばっかり手を入れているとサイトを更新できなくなりそうなので､すこしバランスを考えてやっていきます笑｡Twitter上で､サシシさん([@sashishi_EN](https://twitter.com/sashishi_EN))と､さとけんさん([@satoken_toeic](https://twitter.com/satoken_toeic))のツイートから派生して､カードの記載情報なしで外部ツールのみでカードを表現するというアイデアのもと､iframeによる画像検索を紹介しました｡
+こんにちは、パダワンです。いやー、Twitter って便利ですね。Anki ユーザーさんから様々な知見を得られています。また、Anki 啓蒙活動が非常にやりやすいのでいいですね。ちょっと Twitter ばっかり手を入れているとサイトを更新できなくなりそうなので、すこしバランスを考えてやっていきます笑。Twitter 上で、サシシさん([@sashishi_EN](https://twitter.com/sashishi_EN))と、さとけんさん([@satoken_toeic](https://twitter.com/satoken_toeic))のツイートから派生して、カードの記載情報なしで外部ツールのみでカードを表現するというアイデアのもと、iframe による画像検索を紹介しました。
 
-今回は､iframeタグを用いて画像検索窓を作る際に､ボタンを設置して必要なときに､その窓を生成するという方法を紹介します｡
+今回は、iframe タグを用いて画像検索窓を作る際に、ボタンを設置して必要なときに、その窓を生成するという方法を紹介します。
 
 ## 1\. iframeによる画像検索窓
 
-まずは､iframeによる画像検索とはどのようなものか紹介します｡これは､Ankiユーザーでもあまり知っている人が多くないので役にたつと思います｡
+まずは、iframe による画像検索とはどのようなものか紹介します。これは、Anki ユーザーでもあまり知っている人が多くないので役にたつと思います。
 
-> これ､iframeによる画像検索と組み合わせたら､もはやカード生成する必要ないですな(´·ω·`) [pic.twitter.com/VSZCRu246y](https://t.co/VSZCRu246y)
+> これ、iframeによる画像検索と組み合わせたら、もはやカード生成する必要ないですな(´·ω·`) [pic.twitter.com/VSZCRu246y](https://t.co/VSZCRu246y)
 > 
 > — パダワン@アンキヨリハジメヨ (@ankiyorihajimey) [February 11, 2020](https://twitter.com/ankiyorihajimey/status/1227195929771397120?ref_src=twsrc%5Etfw)
 
-`iframe`タグ(inline frame)を用いることで､文章の中に外部のwebページを埋め込むことが可能になります｡
+`iframe` タグ(inline frame)を用いることで、文章の中に外部の web ページを埋め込むことが可能になります。
 
-ただし､セキュリティ対策としてiframeでのアクセスを禁止しているサイトは結構あります｡ですので､使い所は少し限られます｡Google検索やTwitter等のSNSでもアクセスが禁止されており､画像検索として使えるのは､Bingぐらいですかね｡色々と試してみてください｡今回はBingによる画像検索を例として紹介していきます｡
+ただし、セキュリティ対策として iframe でのアクセスを禁止しているサイトは結構あります。ですので、使い所は少し限られます。Google 検索や Twitter 等の SNS でもアクセスが禁止されており、画像検索として使えるのは、Bing ぐらいですかね。色々と試してみてください。今回は Bing による画像検索を例として紹介していきます。
 
 ## 2\. iframeの使用方法
 
-iframeの基本的なコードです｡これをカードテンプレートの裏面の適当な場所に書いてください｡
+iframe の基本的なコードです。これをカードテンプレートの裏面の適当な場所に書いてください。
 
 ```html
 <iframe style="width:100%; height: 400px; border: solid 1px;"
@@ -40,32 +40,32 @@ src="http://bing.com/images/search?q={{Front}}">
 
 ![uramentemplate](data/uramentemplate.png)
 
-width(幅)は基本的に100%の設定で､height(高さ)は適当な高さに自分で設定してください｡{{Front}}の部分には､自分で設定した語彙のフィールド名をいれてください｡
+width(幅)は基本的に 100％の設定で、height(高さ)は適当な高さに自分で設定してください。{{Front}}の部分には、自分で設定した語彙のフィールド名をいれてください。
 
 ```html
 src="http://bing.com/images/search?q={{Front}}"
 ```
 
-これでフィールドに書いてある単語を検索させます｡このクエリをいじると初期の検索を調整することができます｡
+これでフィールドに書いてある単語を検索させます。このクエリをいじると初期の検索を調整できます。
 
-例えば､
+例えば、
 
 ```html
 src="http://bing.com/images/search?q={{Front}}+meaning"
 ```
 
-これで､`検索ワード meaning`で検索することができます｡他にもクエリをいじることで検索自体を最適化することができるので､調べてみてください｡
+これで、`検索ワード meaning` で検索できます。他にもクエリをいじることで検索自体を最適化できるので、調べてみてください。
 
 ## 3\. iframeによる通信量を削減する方法
 
-`iframeタグ`を上のように直接書くだけだと､カードを毎回めくるたびに通信することになります｡何枚もカードをめくるため､通信量が馬鹿になりません｡
-そこで解決策として**ボタンを設置し､そのボタンを押すときのみ通信し､iframeによる検索窓を展開する方法**を考案しました｡そのコードを紹介しようと思います｡
+`iframeタグ` を上のように直接書くだけだと、カードを毎回めくるたびに通信することになります。何枚もカードをめくるため、通信量が馬鹿になりません。
+そこで解決策として**ボタンを設置し、そのボタンを押すときのみ通信し、iframeによる検索窓を展開する方法**を考案しました。そのコードを紹介しようと思います。
 
-テンプレート裏面に下地となるHTMLコードとそれに加えてJavascriptコードを書きます｡解説しますが､すこし難しいのでわからなければコピペで貼れば十分です｡
+テンプレート裏面に下地となる HTML コードとそれに加えて JavaScript コードを書きます。解説しますが、すこし難しいのでわからなければコピー&ペーストで貼れば十分です。
 
 ### 3-1\. HTMLコード
 
-まずiframeタグを生成する場所のコードです｡上で紹介したHTMLコードとは異なるので､こちらのコードのみ書いてください｡
+まず iframe タグを生成する場所のコードです。上で紹介した HTML コードとは異なるので、こちらのコードのみ書いてください。
 
 ```html
 <div class="myButton">
@@ -75,17 +75,17 @@ src="http://bing.com/images/search?q={{Front}}+meaning"
 <div id="pre_frame"></div>
 ```
 
-`button`タグで簡単にボタンを設置できます｡内部のテキストはボタンに表示されるテキストです｡(ボタンのデザインはCSSでクラス`myButton`に対するコードを書けばよいです｡)
-`<div id="mainword" display="none">{{Front}}</div>`の行において
-{{Front}}は検索する語のフィールド名を入れてください｡ここでやっていることは､クエリ内部のパラメータとしての検索語を取得するための下地をつくっています｡{{Front}}フィールドに書いてある検索語の情報を一度､HTML上で出現させ､idをつけて次に紹介するJavascriptでその情報を取得しやすくします｡{{Front}}フィールドは`display="none"`によりカード上には実際には表示されません｡
-`<div id=pre_frame></div>`のところにiframeが展開されます｡`mainword`idや`searchbtn`idはただの情報取得に使うのでCSSで特に書くことはないです｡
+`button` タグで簡単にボタンを設置できます。内部のテキストはボタンに表示されるテキストです。(ボタンのデザインは CSS でクラス `myButton` に対するコードを書けばよいです。)
+`<div id="mainword" display="none">{{Front}}</div>` の行において
+{{Front}}は検索する語のフィールド名を入れてください。ここでやっていることは、クエリ内部のパラメータとしての検索語を取得するための下地をつくっています。{{Front}}フィールドに書いてある検索語の情報を一度、HTML 上で出現させ、id をつけて次に紹介する JavaScript でその情報を取得しやすくします。{{Front}}フィールドは `display="none"` によりカード上には実際には表示されません。
+`<div id=pre_frame></div>` のところに iframe が展開されます。`mainword`id や `searchbtn`id はただの情報取得に使うので CSS で特に書くことはないです。
 
-ボタンのデザインはサルワカさんを参考にすると良いです｡
+ボタンのデザインはサルワカさんを参考にすると良いです。
 [CSSで作る！押したくなるボタンデザイン100（Web用）](https://saruwakakun.com/html-css/reference/buttons)
 
-### 3-2\. Javascriptコード
+### 3-2\. JavaScriptコード
 
-HTMLの`script`タグ内部にJavascriptを書いていきます｡
+HTML の `script` タグ内部に JavaScript を書いていきます。
 
 ```html
 <script type="text/javascript">
@@ -106,12 +106,12 @@ HTMLの`script`タグ内部にJavascriptを書いていきます｡
 </script>
 ```
 
-このコード自体は､テンプレート裏面の最後に書いてください｡他のスクリプトが存在していても､`script`タグごとそのまま追加してください｡(他のスクリプトと統合する必要は無いので)
-ここでは２つの処理を行っています｡
-(1) 先程解説したHTMLコード上のidから要素を所得と､(2)で使う変数の設定
-(2) イベント(ボタンが押されたときにiframeタグを生成展開する)処理を行う
+このコード自体は、テンプレート裏面の最後に書いてください。他のスクリプトが存在していても、`script` タグごとそのまま追加してください。(他のスクリプトと統合する必要は無いので)
+ここでは２つの処理を行っています。
+(1) 先程解説した HTML コード上の id から要素を所得と、(2)で使う変数の設定
+(2) イベント(ボタンが押されたときに iframe タグを生成展開する)処理を行う
 
-(1) 変数の設定と情報を取得を行います｡
+(1) 変数の設定と情報を取得を行います。
 
 | 変数名 | 情報                                |
 | ------ | ----------------------------------- |
@@ -121,12 +121,12 @@ HTMLの`script`タグ内部にJavascriptを書いていきます｡
 | n_div  | イベント処理によって生成するdivタグ |
 | onetag | iframeの情報を格納する              |
 
-(2) ボタンにイベント処理を組み込みます｡
-`search`変数にはボタン要素が入っており､`addEventListener();`でイベント処理を施します｡`addEventListener();`の引数は､`'click'`パラメータと`無名関数function(){}`の２つです｡
+(2) ボタンにイベント処理を組み込みます。
+`search` 変数にはボタン要素が入っており、`addEventListener();` でイベント処理を施します。`addEventListener();` の引数は、`'click'` パラメータと `無名関数function(){}` の２つです。
 
-これで､ボタンがクリックされた際に､無名関数`function(){};`の{}内部に書かれたスクリプトが実行されます｡これが基本的なコードの骨格です｡
+これで、ボタンがクリックされた際に、無名関数 `function(){};` の{}内部に書かれたスクリプトが実行されます。これが基本的なコードの骨格です。
 
-無名関数`function(){}`の内部を見ていきます｡
+無名関数 `function(){}` の内部を見ていきます。
 
 ```js
 n_div = document.createElement(`div`);
@@ -136,20 +136,20 @@ n_div.innerHTML = onetag;
 newele.appendChild(n_div);
 ```
 
-1. `document.createElement(`div`);`でdiv要素を生成し変数`n_div`に格納｡
-2. `onetag = "<iframe class='frame' src='http://www.bing.com/images/search?q={{Front}}'>" + "</iframe>";`でiframeの情報を格納｡
-3. `n_div.className = 'ac_frame';`でdiv要素にクラスをつける｡CSS上でこのクラス`ac_frame`に対するコードを書けば検索窓のデザインを変更できます｡
-4. `n_div.innerHTML = onetag;`でiframeの情報をdiv要素内のHTMLとして書き加えます｡
-5. `newele.appendChild(n_div);`で､(1)の変数宣言時に取得した`pre_frame`idのdiv要素の内部の子要素として出力します｡
+1. `document.createElement(`div`);` で div 要素を生成し変数 `n_div` に格納。
+2. `onetag = "<iframe class='frame' src='http://www.bing.com/images/search?q={{Front}}'>" + "</iframe>";` で iframe の情報を格納。
+3. `n_div.className = 'ac_frame';` で div 要素にクラスをつける。CSS 上でこのクラス `ac_frame` に対するコードを書けば検索窓のデザインを変更できます。
+4. `n_div.innerHTML = onetag;` で iframe の情報を div 要素内の HTML として書き加えます。
+5. `newele.appendChild(n_div);` で、(1)の変数宣言時に取得した `pre_frame`id の div 要素の内部の子要素として出力します。
 
-これでイベント処理が完成です｡
-Bingでの画像検索となっているので､他のサイトで試してみたい場合は､
-`onetag = "<iframe class='frame' src='http://www.bing.com/images/search?q={{Front}}'>" + "</iframe>";`のscr=''の内部URLを書き換えるだけでいいです｡
+これでイベント処理が完成です。
+Bing での画像検索となっているので、他のサイトで試してみたい場合は、
+`onetag = "<iframe class='frame' src='http://www.bing.com/images/search?q={{Front}}'>" + "</iframe>";` の scr=''の内部 URL を書き換えるだけでいいです。
 
 ### 3-3\. まとめ(全コード)
 
-これがイベント処理でiframeを展開する全コードです｡
-Javascriptがわからなくても､このコードをテンプレート裏面に直接書けば完成です｡
+これがイベント処理で iframe を展開する全コードです。
+JavaScript がわからなくても、このコードをテンプレート裏面に直接書けば完成です。
 
 ```html
 <div class="myButton">
@@ -176,20 +176,20 @@ Javascriptがわからなくても､このコードをテンプレート裏面�
 </script>
 ```
 
-デモ画像です｡
-ボタンを押すとiframeタグを押した回数分生成できます｡
+デモ画像です。
+ボタンを押すと iframe タグを押した回数分生成できます。
 
 ![iframe_demo](data/iframe_demo-2.gif)
 
 ### 3-4\. CSSコード(追記)
 
-追記です｡画面の大きさによって検索窓の大きさを調整できます｡
+追記です。画面の大きさによって検索窓の大きさを調整できます。
 
-> こんな感じです｡実際は､windowのサイズによって要素の大きさを変えることができます｡iphoneの画面幅とipadの画面幅がわかれば両方で大きさうまくフィットさせることができます｡ [pic.twitter.com/PPKCdLDPkV](https://t.co/PPKCdLDPkV)
+> こんな感じです。実際は、windowのサイズによって要素の大きさを変えることができます。iphoneの画面幅とipadの画面幅がわかれば両方で大きさうまくフィットさせることができます。 [pic.twitter.com/PPKCdLDPkV](https://t.co/PPKCdLDPkV)
 > 
 > — パダワン@アンキヨリハジメヨ (@ankiyorihajimey) [February 19, 2020](https://twitter.com/ankiyorihajimey/status/1230125284537462787?ref_src=twsrc%5Etfw)
 
-以下のCSSコードをテンプレートのCSSのところに書き加えてください｡`.frame`はJavascriptで設定したiframeタグのクラス名です｡iframeのデザインをこれで変更できます｡`@media screen`では画面のサイズによって要素の大きさ等デザインを最適化できます｡iPhoneとiPadの両方を使っている場合等で役に立ちます｡
+以下の CSS コードをテンプレートの CSS のところに書き加えてください。`.frame` は JavaScript で設定した iframe タグのクラス名です。iframe のデザインをこれで変更できます。`@media screen` では画面のサイズによって要素の大きさ等デザインを最適化できます。iPhone と iPad の両方を使っている場合等で役に立ちます。
 
 ```css
 .frame {
@@ -202,17 +202,17 @@ Javascriptがわからなくても､このコードをテンプレート裏面�
 }
 ```
 
-(min-width:500px) で500px以上の幅の画面では､高さが800pxになります｡(たぶん500pxは変えなくても大丈夫かと)この500pxと800pxの数字をいじってみて調整してみてください｡
+(min-width:500px) で 500px 以上の幅の画面では、高さが 800px になります。(たぶん 500px は変えなくても大丈夫かと)この 500px と 800px の数字をいじってみて調整してみてください。
 
 ## 4\. パダワンのボタン設置
 
-僕は､ボタン類は全部まとめてツールバーのようにしています｡
+僕は、ボタン類は全部まとめてツールバーのようにしています。
 
 > Javascriptでイベント処理として組み込むのでちょっと面倒なのですが、現状はこんな感じで既存のデッキにボタンとして組み込んでいます。必要なときのみ使えます。 [pic.twitter.com/SvJQtnZiix](https://t.co/SvJQtnZiix)
 > 
 > — パダワン@アンキヨリハジメヨ (@ankiyorihajimey) [February 14, 2020](https://twitter.com/ankiyorihajimey/status/1228167297107296257?ref_src=twsrc%5Etfw)
 
-単純にtableタグ内部にdetailsタグとsummaryタグとliタグを組み合わせてツールバーを作っています｡コードは下になります｡僕のカード自体のデザインとコードは近いうちに記事にするので参考にしてみてください｡
+単純に table タグ内部に details タグと summary タグと li タグを組み合わせてツールバーを作っています。コードは下になります。僕のカード自体のデザインとコードは近いうちに記事にするので参考にしてみてください。
 
 ```html
 <div class="widMenu">
@@ -267,4 +267,4 @@ Javascriptがわからなくても､このコードをテンプレート裏面�
 </div>
 ```
 
-いかがでしたか?ボタンとイベント処理は､思ったよりも簡単にできます｡Javascriptについては､すこしだけ自分自身でインターネット上の情報や書籍で学ぶ必要があるかもしれませんが､基礎知識があれば今回解説したコードもそこまで難しくないのでトライしてみてください｡
+いかがでしたか?ボタンとイベント処理は、思ったよりも簡単にできます。JavaScript については、すこしだけ自分自身でインターネット上の情報や書籍で学ぶ必要があるかもしれませんが、基礎知識があれば今回解説したコードもそこまで難しくないのでトライしてみてください。

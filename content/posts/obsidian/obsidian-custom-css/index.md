@@ -10,78 +10,78 @@ aliases: [記事_Obsidianのスタイルを改造する]
 更新日 : 2020-11-09
 
 こんにちは。パダワンです。今日も短めの記事をパンと出したいと思います。
-今日は簡単ですがObsidianのカスタムCSSを改造する方法を紹介します。
+今日は簡単ですが Obsidian のカスタム CSS を改造する方法を紹介します。
 
-Ankiを使っている方は、HTMLとCSSを自分で書いてカードのテンプレートを作成したことがあると思います。なのでAnkiを使ったことがある人はとっつきやすいと思います。かくゆう私もAnkiでHTMLとCSSの基礎を学んびました。Ankiを使いながらHTMLとCSSを学ぶのはかなりおすすめです。
+Anki を使っている方は、HTML と CSS を自分で書いてカードのテンプレートを作成したことがあると思います。なので Anki を使ったことがある人はとっつきやすいと思います。かくゆう私も Anki で HTML と CSS の基礎を学んびました。Anki を使いながら HTML と CSS を学ぶのはかなりおすすめです。
 
-この記事の前提知識としてHTMLとCSSの知識(クラスとプロパティ、DeveloperToolの使い方)の知識が少し必要です。
+この記事の前提知識として HTML と CSS の知識(クラスとプロパティ、DeveloperTool の使い方)の知識が少し必要です。
 
-HTMLとCSSを全く触ったことの無い方にはサイト"サルワカ"がおすすめです。次の2つの記事を見れば今回なにをやってるのか大体わかるようになります。私もお世話になりました。かなり分かりやすいので参考にしてみてください。
+HTML と CSS を全く触ったことの無い方にはサイト"サルワカ"がおすすめです。次の 2 つの記事を見れば今回なにをやってるのか大体わかるようになります。私もお世話になりました。かなり分かりやすいので参考にしてみてください。
 
 - [初心者向けHTML入門：書き方の基本とタグの使い方](https://saruwakakun.com/html-css/basic/html)
 - [初心者向けCSS（スタイルシート）入門：基本的な書き方を総まとめ！](https://saruwakakun.com/html-css/basic/css)
 
 
 ## 0. 全体の流れ
-CSSファイルを改造するにあたっての全体の流れです。
-全体として6つの工程があります。
+CSS ファイルを改造するにあたっての全体の流れです。
+全体として 6 つの工程があります。
 
 1. 準備としてテキストエディタをインストール
-2. Obsidianの設定画面を開き、 プラグインの項目から Custom CSS の設定をONにする
-1. Community Themes で好きなテーマを選び、Useを押してCSSファイルをダウンロード
-1. obsidian.cssがつくられるので、別名でそれのバックアップを作る
-2. CSSファイルの中身を知る
-1. Developer Toolで要素を調べる
-1. CSSファイルを調整して実際の表示を確認しながら好きな見た目にする
+2. Obsidian の設定画面を開き、 プラグインの項目から Custom CSS の設定を ON にする
+1. Community Themes で好きなテーマを選び、Use を押して CSS ファイルをダウンロード
+1. obsidian.css がつくられるので、別名でそれのバックアップを作る
+2. CSS ファイルの中身を知る
+1. Developer Tool で要素を調べる
+1. CSS ファイルを調整して実際の表示を確認しながら好きな見た目にする
 
 
 ## 1. 準備
 
-まずObsidianのスタイルシートを改造するにあたって必要なのものがテキストエディタです。VSCodeやAtom等を入れてください。これでCSSのSyntax highlight(コードに色をつけて見やすくする)をすることができます。
+まず Obsidian のスタイルシートを改造するにあたって必要なのものがテキストエディタです。VSCode や Atom 等を入れてください。これで CSS の Syntax highlight(コードに色をつけて見やすくする)をできます。
 
 - [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 - [Atom](https://atom.io/)
 
-ちなみに最近はVS Codeがおすすめらしいです。
+ちなみに最近は VS Code がおすすめらしいです。
 
 
 ## 2. Custom CSSの設定をONにする
 
-デフォルトでのスタイルではなく、Custom CSSを改造します。好きなテーマをインストールしてください。
+デフォルトでのスタイルではなく、Custom CSS を改造します。好きなテーマをインストールしてください。
 
-設定の項目からプラグイン > Custom CSS と行き、ONにしてください。
+設定の項目からプラグイン > Custom CSS と行き、ON にしてください。
 
 ![設定1](data/00002_customCSS.png)
 
 ## 3. Community Themesで好きなテーマを選ぶ
 
-Community Themeから好きなテーマを選んでUseボタンをクリックしてください。そうすると`obsidian.css`というCSSファイルがVaultのディレクトリに作成されます。
+Community Theme から好きなテーマを選んで Use ボタンをクリックしてください。そうすると `obsidian.css` という CSS ファイルが Vault のディレクトリに作成されます。
 
 ![設定2](data/00009_customCSS.png)
 
 ## 4. obsidian.cssのバックアップを作る
 
-`obsidian.css`ファイルは、Community Themeから新しいテーマを選択してUseするたびに上書きされるので、自分の改造したCSSファイルが上書きされないようにバックアップとしてファイルを複製します
+`obsidian.css` ファイルは、Community Theme から新しいテーマを選択して Use するたびに上書きされるので、自分の改造した CSS ファイルが上書きされないようにバックアップとしてファイルを複製します
 
-まずは、ターミナルもしくはエクスプローラー/ファインダーからVaultとして選択してあるフォルダを開きます。そうするとそのフォルダ直下に`obsidian.css`ファイルが見つかります。
+まずは、ターミナルもしくはエクスプローラー/ファインダーから Vault として選択してあるフォルダを開きます。そうするとそのフォルダ直下に `obsidian.css` ファイルが見つかります。
 
-選択して、CSSファイルをデフォルトでテキストエディタで開けるように、情報の項目を開きます。デフォルトのappをテキストエディタにします。
+選択して、CSS ファイルをデフォルトでテキストエディタで開けるように、情報の項目を開きます。デフォルトの app をテキストエディタにします。
 
 ![設定2 情報](data/00003_customCSS.png)
 ![設定3 情報](data/00004_customCSS.png)
 
 
-次に隠しフォルダとして`.themes`という名でCSS専用のフォルダを作成します。その中にobsidian.cssをわかりやすい名前をつけて複製保存してください。
+次に隠しフォルダとして `.themes` という名で CSS 専用のフォルダを作成します。その中に obsidian.css をわかりやすい名前をつけて複製保存してください。
 
-`テーマ名_日にち.css`とかで良いです。
+`テーマ名_日にち.css` とかで良いです。
 
-これでCSSを改造するための準備が終わりました。今後、改造が終わる度にobsidian.cssの内容を`Cmd+A`で全選択してコピーし、バックアップファイルにペーストしてください。
+これで CSS を改造するための準備が終わりました。今後、改造が終わる度に obsidian.css の内容を `Cmd+A` で全選択してコピーし、バックアップファイルにペーストしてください。
 
 ## 5. CSSファイルの中身を知る
 
-では`obsidian.css`ファイルをダブルクリックで開いてみてください。テキストエディタが立ち上がります。
+では `obsidian.css` ファイルをダブルクリックで開いてみてください。テキストエディタが立ち上がります。
 
-CSSファイルを改造する際にテーマの更新がある場合があるので、どこに何を追加したか変更したかをファイル冒頭なのでにメモしておいてください。バグがあった場合に、テーマの更新をして治すのでその際に、自分の改造した部分がわかるようにしておきます。
+CSS ファイルを改造する際にテーマの更新がある場合があるので、どこに何を追加したか変更したかをファイル冒頭なのでにメモしておいてください。バグがあった場合に、テーマの更新をして治すのでその際に、自分の改造した部分がわかるようにしておきます。
 
 コメントアウトして内容等を書いておいてください。
 
@@ -94,23 +94,23 @@ CSSファイルを改造する際にテーマの更新がある場合がある�
 
 ### 5-1. CSSカスタムプロパティ
 
-複数のテーマで、CSSカスタムプロパティが使われています。
-CSSカスタムプロパティは、CSSのプロパティを変数として扱って、色などのプロパティをまとめた場所で管理できるようになります。
+複数のテーマで、CSS カスタムプロパティが使われています。
+CSS カスタムプロパティは、CSS のプロパティを変数として扱って、色などのプロパティをまとめた場所で管理できるようになります。
 
 参考 : [CSS カスタムプロパティ (変数) の使用 - CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties)
 
 >複雑なウェブサイトには、膨大な量の CSS があり、しばしば同じ値が使われています。たとえば、同じ色が異なる場所で数百使われており、色を変更する場合、グローバルに検索し、置き換えをしなくてはなりません。カスタムプロパティを使えば、一ヶ所に値を保存しておき、複数の場所から参照することができます。更なるメリットとして、意味的な識別をしやすくなります。たとえば、 `--main-text-color` は `#00ff00` より、とりわけ同じ色がさまざまな文脈で使われる場合は理解しやすいでしょう。
 
-CSSを扱う上ではわかりやすいので、なるべくカスタムプロパティを使っているテーマを選ぶといいです。
+CSS を扱う上ではわかりやすいので、なるべくカスタムプロパティを使っているテーマを選ぶといいです。
 
-おすすめのカスタムCSSテーマ
+おすすめのカスタム CSS テーマ
 - [kepano/obsidian-minimal](https://github.com/kepano/obsidian-minimal)
 - [TriDiamond/Obsidian-Obsidianite](https://github.com/TriDiamond/Obsidian-Obsidianite)
 - [nickmilo/Cybertron](https://github.com/nickmilo/Cybertron)
 
 
 
-使い方としては、CSS変数を次のように`:root`疑似クラスのプロパティとして定義するか、もしくは`theme-light`クラスと`theme-dark`クラスのプロパティとして定義します。
+使い方としては、CSS 変数を次のように `:root` 疑似クラスのプロパティとして定義するか、もしくは `theme-light` クラスと `theme-dark` クラスのプロパティとして定義します。
 
 ```css
 :root {
@@ -133,7 +133,7 @@ CSSを扱う上ではわかりやすいので、なるべくカスタムプロ�
 }
 ```
 
-使うときは次のようにCSSの`var()`関数の引数としてCSS変数を入れて利用します。
+使うときは次のように CSS の `var()` 関数の引数として CSS 変数を入れて利用します。
 
 ```css
 .graph-view.color-fill {
@@ -144,7 +144,7 @@ CSSを扱う上ではわかりやすいので、なるべくカスタムプロ�
 参考 : [var() - CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/var)
 
 
-例えば、Obsidianiteのテーマでは`obsidian.css`ファイルの冒頭にこのようにかいてあります。
+例えば、Obsidianite のテーマでは `obsidian.css` ファイルの冒頭にこのようにかいてあります。
 
 ```css
 .theme-dark {
@@ -158,16 +158,16 @@ CSSを扱う上ではわかりやすいので、なるべくカスタムプロ�
 }
 ```
 
-`--text-normal:`の後の色を`#bebebe`から例えば`#aaaaaa`に変更すると`var(-text-normal)`で参照されている部分の色が一度に変更されます。この場合はテキストカラーが`#aaaaaa`に変更されます。
+`--text-normal:` の後の色を `#bebebe` から例えば `#aaaaaa` に変更すると `var(-text-normal)` で参照されている部分の色が一度に変更されます。この場合はテキストカラーが `#aaaaaa` に変更されます。
 
-ちなみにこの`#aaaaaa`というのはHexコードと言います。
+ちなみにこの `#aaaaaa` というのは Hex コードと言います。
 
 参考: [色の分類（HSV・RGB・HEX） | ウェブ制作 | 葛飾区のホームページ制作ワイズ](https://web.wiis.info/web-development/classification-of-colors-hsv-rgb-and-hex/)
 
 ### 5-2. 例.ノードグラフの色
 
 実際にイジる部分としてはテーマごとでわかりやすくカスタムプロパティで管理してくれている場合は簡単です。
-そのCSS変数の値を書き換えるだけです。
+その CSS 変数の値を書き換えるだけです。
 
 ですが、そうでない場合は自分で次のようにクラスそのものを書き加える必要があります。
 
@@ -198,7 +198,7 @@ CSSを扱う上ではわかりやすいので、なるべくカスタムプロ�
 }
 ```
 
-obsidian.cssファイル内でテキストエディタで `Cmd+F`を押して`.graph-view`を検索すると出てきます。
+obsidian.css ファイル内でテキストエディタで `Cmd+F` を押して `.graph-view` を検索すると出てきます。
 
 無い場合は自分でコードを作成します。
 こんな感じで色付けがされます。
@@ -207,24 +207,24 @@ obsidian.cssファイル内でテキストエディタで `Cmd+F`を押して`.g
 
 ## 6. Developer Toolで要素を調べる
 
-この部分の色を変えたいが、どこのcssプロパティをいじればいいのかわからないということがあると思います。
+この部分の色を変えたいが、どこの css プロパティをいじればいいのかわからないということがあると思います。
 
-そんなときにDeveloper Toolを使います。
-`View > Toggle Developer Tools `を開く、もしくは `Cmd + Alt + I`を押すとDeveloper Toolが開きます。
+そんなときに Developer Tool を使います。
+`View > Toggle Developer Tools ` を開く、もしくは `Cmd + Alt + I` を押すと Developer Tool が開きます。
 
 ![DeveloperTool](data/00015_customCSS.png)
 
 要するにブラウザの検証ツールと同じです。
-Obsidian自体がHTMLとCSSでレンダリングされているので、要素をクリックするとその要素のクラスやプロパティがわかるようになっています。
+Obsidian 自体が HTML と CSS でレンダリングされているので、要素をクリックするとその要素のクラスやプロパティがわかるようになっています。
 
 
-Developer Tool画面の左上の
-`Select an element in the page to inspect it` をクリックするとカーソルを合わせて部分のHTML部分をハイライトしてくれます。
+Developer Tool 画面の左上の
+`Select an element in the page to inspect it` をクリックするとカーソルを合わせて部分の HTML 部分をハイライトしてくれます。
 変えたい部分にカーソルをあわせてクリックしてクラス名とプロパティを調べます。
 
 ![DeveloperTool](data/00006_customCSS.png)
 
-ちなみに`app.css`にすべてのデフォルトのクラス名やプロパティ値が記載されています。Developer ToolのSourceから見ることができます。デフォルト値なので変えない方がいいですね。Custom CSSのファイル`obsidian.css`に記載されてないこともあるので、注意してください。`app.css`をみればどんなクラスがあるのかがわかります。
+ちなみに `app.css` にすべてのデフォルトのクラス名やプロパティ値が記載されています。Developer Tool の Source から見ることができます。デフォルト値なので変えない方がいいですね。Custom CSS のファイル `obsidian.css` に記載されてないこともあるので、注意してください。`app.css` をみればどんなクラスがあるのかがわかります。
 
 ![app.css](data/00005_customCSS.png)
 
@@ -232,26 +232,26 @@ Developer Tool画面の左上の
 
 ## 7. CSSファイルを調整して実際の表示を確認しながら好きな見た目にする
 
-Obsidianを開きながら、テキストエディタで`obsidian.css`の変更を保存するとすぐにObsidianのレンダリングが更新されます。
+Obsidian を開きながら、テキストエディタで `obsidian.css` の変更を保存するとすぐに Obsidian のレンダリングが更新されます。
 
-ここでは、参考にいくつか例をあげてCSSコードを紹介します。
+ここでは、参考にいくつか例をあげて CSS コードを紹介します。
 
 ### 7-1. 変更部分の概要
-基本的にスタイル変更する部分は次の3つのスペースで
+基本的にスタイル変更する部分は次の 3 つのスペースで
 
-- UI部分(workspace)
-- Editor画面
-- Preview画面
+- UI 部分(workspace)
+- Editor 画面
+- Preview 画面
 
 ![テキストカラー変更](data/00016_customCSS.png)
 
-改造しやすいのがEditorとPreview画面ですね。
+改造しやすいのが Editor と Preview 画面ですね。
 
 大雑把な目安として
-Editorのクラスは`.cm-`から始まります。
-Previewのクラスは`.markdown-preview-`から始まります。
+Editor のクラスは `.cm-` から始まります。
+Preview のクラスは `.markdown-preview-` から始まります。
 
-例えば、`#` から始まる目次部分の色を変更したい場合はEditor画面なら`.cm-header`、Preview画面なら`.markdown-preview-view h1`です。
+例えば、`#` から始まる目次部分の色を変更したい場合は Editor 画面なら `.cm-header`、Preview 画面なら `.markdown-preview-view h1` です。
 
 ```css
   /* ========= editor画面の目次 ========= */
@@ -270,9 +270,9 @@ Previewのクラスは`.markdown-preview-`から始まります。
   }
 ```
 
-こんな感じで`.cm-header`等を`cmd+F`で検索してその場所に記載されているコードを変更します。なければ自分で付け足します。
+こんな感じで `.cm-header` 等を `cmd+F` で検索してその場所に記載されているコードを変更します。なければ自分で付け足します。
 
-スタイルには優先度があるため、`!important`を記載しないと反映されないことがあるので、反映したいときは上のようにカスタムプロパティの後に`!important`を記載してください。
+スタイルには優先度があるため、`!important` を記載しないと反映されないことがあるので、反映したいときは上のようにカスタムプロパティの後に `!important` を記載してください。
 
 参考: [CSSでの表現の優先度](https://www.ankiyorihajimeyo.com/anki/font-and-textdecoration/#4-1-%E8%A1%A8%E7%8F%BE%E3%81%AE%E5%84%AA%E5%85%88%E5%BA%A6)
 
@@ -280,15 +280,15 @@ Previewのクラスは`.markdown-preview-`から始まります。
 ### 7-2. テキストカラーの変更
 
 一例としてテキスト装飾の部分のコードを紹介します。
-- `==`で囲まれるハイライト 
-- `**`で囲まれるボールド
-- `*`で囲まれるイタリック
+- `==` で囲まれるハイライト 
+- `**` で囲まれるボールド
+- `*` で囲まれるイタリック
 
-の3つに関して色を変更します。
+の 3 つに関して色を変更します。
 
-`.cm-` から始まるのがEditor画面
-`.markdown-preview-` から始まるのがPreview画面のクラスです。
-下のコードの例では、カンマを使ってEditorとPreviewの対応するクラスをまとめて変更しています。
+`.cm-` から始まるのが Editor 画面
+`.markdown-preview-` から始まるのが Preview 画面のクラスです。
+下のコードの例では、カンマを使って Editor と Preview の対応するクラスをまとめて変更しています。
 
 ```css
   /* ========= ハイライトカラーを変更========= */    
@@ -365,12 +365,12 @@ Previewのクラスは`.markdown-preview-`から始まります。
 
 ## CSS Common Hacks
 
-Obsidianの公式Forumでの次のPostでおもしろい投稿があります。
-CSSのハック方法が色々記載されています。
+Obsidian の公式 Forum での次の Post でおもしろい投稿があります。
+CSS のハック方法が色々記載されています。
 
 [Meta Post - Common CSS Hacks - Share & showcase - Obsidian Forum](https://forum.obsidian.md/t/meta-post-common-css-hacks/1978)
 
-例えば、Dynalist風にListの表示にBullet pointをつけたりするためのコードなどが紹介されています。
+例えば、Dynalist 風に List の表示に Bullet point をつけたりするためのコードなどが紹介されています。
 
 ```css
 span.cm-formatting-list-ul {
@@ -426,5 +426,5 @@ ol ol::before {
 どんどん更新されているのでこまめにチェックしてみるとおもしろいと思います。
 
 
-☟ Obsidianのカスタマイズについての次の記事です。合わせてお読みください。
+☟ Obsidian のカスタマイズについての次の記事です。合わせてお読みください。
 [SCSS/SASS - ObsidianのスタイルをSCSSで作る| アンキヨリハジメヨ](https://www.ankiyorihajimeyo.com/obsidian/obsidian_scss/)

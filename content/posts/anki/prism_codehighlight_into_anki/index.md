@@ -11,11 +11,11 @@ cover:
 tags: [" #anki ", " #prism "]
 ---
 
-[Prism.js](https://prismjs.com/index.html)を利用してAnkiで次のようなコードハイライトを実現する。
+[Prism.js](https://prismjs.com/index.html)を利用して Anki で次のようなコードハイライトを実現する。
 
 ![](data/prism-0-view.png)
 
-[Prism](https://prismjs.com/index.html)の公式サイトにアクセスして｢Download｣ボタンを押す。
+[Prism](https://prismjs.com/index.html)の公式サイトにアクセスして「Download」ボタンを押す。
 
 ![prism-1](data/prism-1.png)
 
@@ -25,7 +25,7 @@ tags: [" #anki ", " #prism "]
 ![](data/prism-2_選択画面.png)
 
 
-- Compression level : Minified versionをチェック
+- Compression level : Minified version をチェック
 - Themes : 好きなハイライトテーマを選択
 - Languages : Select/unselect all をチェックしてすべての言語のチェックを入れる
 
@@ -46,15 +46,15 @@ tags: [" #anki ", " #prism "]
 
 ![](data/prism-4_download.png)
 
-｢DOWNLOAD JS｣と｢DOWNLOAD CSS｣をクリックして`prism.js`と`prism.css`をダウンロードする。
+「DOWNLOAD JS」と「DOWNLOAD CSS」をクリックして `prism.js` と `prism.css` をダウンロードする。
 
-Ankiにデータを消されないように名前の頭にアンダーバーをつけて`_prisim.js`、`_prism.css`とリネームする。
+Anki にデータを消されないように名前の頭にアンダースコアをつけて `_prisim.js`、`_prism.css` とリネームする。
 
-Ankiを閉じた状態で`/Users/User_Name/Library/Application Support/Anki2/Profile_Name/collection.media`にその2つのファイルをペーストする。
+Anki を閉じた状態で `/Users/User_Name/Library/Application Support/Anki2/Profile_Name/collection.media` にその 2 つのファイルをペーストする。
 
 ![](data/prism-5_files.png)
 
-Ankiを起動して使用するノートタイプを編集する。
+Anki を起動して使用するノートタイプを編集する。
 
 カードタイプの編集画面で次のコードを適当な場所に追記する。これでコードハイライトが実現する。
 
@@ -65,7 +65,7 @@ Ankiを起動して使用するノートタイプを編集する。
 
 ![](data/prism-7_code.png)
 
-フィールドに次のコードを書く。`language-xxxx`のxxxxにはなんの言語か指定する。JavaScriptなら`language-js`とする。
+フィールドに次のコードを書く。`language-xxxx` の xxxx にはなんの言語か指定する。JavaScript なら `language-js` とする。
 
 ```html:
 <pre class="language-xxxx"><code>
@@ -75,7 +75,7 @@ Ankiを起動して使用するノートタイプを編集する。
 
 ![](data/prism-6_code.png)
 
-xxxxの部分は[次から確認できる](https://prismjs.com/index.html)
+xxxx の部分は[次から確認できる](https://prismjs.com/index.html)
 
 ![](data/prism-8_lang.png)
 
