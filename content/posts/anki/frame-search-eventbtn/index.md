@@ -6,7 +6,7 @@ cover:
     image: "data/head_iframe.jpg" # image path/url
     alt: "サムネイル" # alt text
     hidden: true # only hide on current single page
-tags: ["test"]
+tags: [" #anki "]
 aliases: [記事_iframeによる画像検索窓で視覚的に単語を覚える]
 ---
 

@@ -6,7 +6,7 @@ cover:
     image: "data/head_LLN.png" # image path/url
     alt: "thumbnail" # alt text
     hidden: true # only hide on current single page
-tags: ["test"]
+tags: [" #anki "]
 ---
 
 # LLN : Netflixで英語を学びながらAnkiカード作成
