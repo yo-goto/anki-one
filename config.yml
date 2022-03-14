@@ -49,6 +49,7 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+
   # サムネイル画像
   cover:
       relative: false # when using page bundles set this to true
@@ -91,6 +92,7 @@ outputs:
     home:
         - HTML
         - RSS
+        - JSON
 
 markup:
     goldmark:
