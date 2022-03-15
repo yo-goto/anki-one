@@ -1,5 +1,5 @@
-baseURL: 'https://yo-goto.github.io/anki-one'
-title: 'anki ONE'
+baseURL: 'https://yo-goto.github.io/tools-for-one'
+title: 'Tools for ONE'
 theme: 'PaperMod'
 languageCode: "ja-jp"
 hasCJKLanguage: true
@@ -20,22 +20,22 @@ minify:
 # hugoのメニュー設定
 menu:
     main:
-        - name: Search
+        - name: Search 🔎
           url: search/
           weight: 10
-        - name: Archive
+        - name: Archive 📜
           url: archives
           weight: 20
-        - name: Tags
+        - name: Tags 🏷
           url: tags/
           weight: 30
-        - name: Zenn
+        - name: Zenn 🤖
           url: "https://zenn.dev/estra"
           weight: 40
 
 # テーマ設定
 params:
-  defaultTheme: light
+  defaultTheme: dark
   DateFormat: "2006-01-02"
   ShowReadingTime: true
   ShowShareButtons: true
@@ -55,14 +55,18 @@ params:
       relative: false # when using page bundles set this to true
 
   homeInfoParams:
-    Title: anki ONE
+    Title: Tools for ONE
     Content: >
+      - <img src="https://pbs.twimg.com/profile_banners/1218331225917509632/1633828032/1500x500" style="border-radius: 10px; filter: grayscale(100%); " />
       
-      - PADAone の個人ブログです
+      
+      - 
 
-      - 「**アンキヨリハジメヨ**」のアーカイブも載せています
 
-      - このブログでは英語学習やプラグイン開発などについて書くいく予定です
+      - ミニサイト「**アンキヨリハジメヨ**」のアーカイブを記載しています
+
+      - PADAone の個人ブログとしてツールや英語学習などについて書いていく予定です
+
 
   # githubでの編集提案    
   editPost:
