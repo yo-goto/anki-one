@@ -1,90 +1,144 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on anki ONE</title>
-    <link>https://yo-goto.github.io/anki-one/tags/</link>
-    <description>Recent content in Tags on anki ONE</description>
+    <title>Tags on Tools for ONE</title>
+    <link>https://yo-goto.github.io/tools-for-one/tags/</link>
+    <description>Recent content in Tags on Tools for ONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/anki-one/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/tools-for-one/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> #anki </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#anki/</link>
+      <title>favicon</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/favicon/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/favicon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/hugo/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>site</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/site/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>textlint</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/textlint/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/textlint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yaml</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/yaml/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anki</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/anki/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#anki/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/anki/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #prism </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#prism/</link>
+      <title>prism</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/prism/</link>
       <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#prism/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/prism/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #obsidian </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#obsidian/</link>
+      <title>obsidian</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/obsidian/</link>
       <pubDate>Sat, 26 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#obsidian/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/obsidian/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #iphone </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#iphone/</link>
+      <title>iphone</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/iphone/</link>
       <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#iphone/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/iphone/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #mac </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#mac/</link>
+      <title>mac</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/mac/</link>
       <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#mac/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #PKM </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#pkm/</link>
+      <title>PKM</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/pkm/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#pkm/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/pkm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #font </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#font/</link>
+      <title>font</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/font/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#font/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/font/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #SRS </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#srs/</link>
+      <title>SRS</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/srs/</link>
       <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#srs/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/srs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title> #study/english </title>
-      <link>https://yo-goto.github.io/anki-one/tags/#study/english/</link>
+      <title>git/github/pages</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/git/github/pages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://yo-goto.github.io/anki-one/tags/#study/english/</guid>
+      <guid>https://yo-goto.github.io/tools-for-one/tags/git/github/pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>study/english</title>
+      <link>https://yo-goto.github.io/tools-for-one/tags/study/english/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/tags/study/english/</guid>
       <description></description>
     </item>
     

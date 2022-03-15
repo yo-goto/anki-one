@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PKM on Tools for ONE</title>
+    <link>https://yo-goto.github.io/tools-for-one/tags/pkm/</link>
+    <description>Recent content in PKM on Tools for ONE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/tools-for-one/tags/pkm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>obsidian PKM Map</title>
+      <link>https://yo-goto.github.io/tools-for-one/posts/obsidian/links-obsidians/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/posts/obsidian/links-obsidians/</guid>
+      <description>ObsidianにYoutubeの動画を埋め込む方法</description>
+    </item>
+    
+  </channel>
+</rss>

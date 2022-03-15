@@ -2,82 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#anki/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/favicon/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/fleeting/favicon.io/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/fleeting/moved-to-github-pages/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/hugo/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/fleeting/hugo-server-port-stack/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/fleeting/hugo-post-future-date/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/site/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/textlint/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/yaml/</loc>
+    <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/anki/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/categories/anki/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/anki-another-version/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/anki-another-version/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yo-goto.github.io/anki-one/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yo-goto.github.io/anki-one/categories/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/</loc>
-    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#prism/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/prism/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/prism_codehighlight_into_anki/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/prism_codehighlight_into_anki/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#obsidian/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/obsidian/obsidian-scss/</loc>
     <lastmod>2020-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-scss/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/obsidian/</loc>
     <lastmod>2020-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#iphone/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/iphone/</loc>
     <lastmod>2020-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#mac/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/mac/</loc>
     <lastmod>2020-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/audio-tts-pronunciation/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/audio-tts-pronunciation/</loc>
     <lastmod>2020-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#pkm/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/obsidian/obsidian-custom-css/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-custom-css/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/obsidian/obsidian-iframe-youtube/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/obsidian/obsidian-iframe-youtube/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/obsidian/links-obsidians/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/obsidian/links-obsidians/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/pkm/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#font/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/font/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#srs/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/font-and-textdecoration/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/font-and-textdecoration/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/frame-search-eventbtn/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/frame-search-eventbtn/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/chrome-addon-languagelearningwithnetflix/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/chrome-addon-languagelearningwithnetflix/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/srs/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/posts/anki/mazuankiyorihajimeyo/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/posts/anki/mazuankiyorihajimeyo/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/tags/#study/english/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/archives/</loc>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/archives/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/categories/</loc>
   </url><url>
-    <loc>https://yo-goto.github.io/anki-one/search/</loc>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/git/github/pages/</loc>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/search/</loc>
+  </url><url>
+    <loc>https://yo-goto.github.io/tools-for-one/tags/study/english/</loc>
   </url>
 </urlset>

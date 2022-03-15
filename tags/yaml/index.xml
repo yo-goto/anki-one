@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>yaml on Tools for ONE</title>
+    <link>https://yo-goto.github.io/tools-for-one/tags/yaml/</link>
+    <description>Recent content in yaml on Tools for ONE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yo-goto.github.io/tools-for-one/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo のポストの日付</title>
+      <link>https://yo-goto.github.io/tools-for-one/posts/fleeting/hugo-post-future-date/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yo-goto.github.io/tools-for-one/posts/fleeting/hugo-post-future-date/</guid>
+      <description>Hugo のビルド時に未来の日付は認識されない</description>
+    </item>
+    
+  </channel>
+</rss>
