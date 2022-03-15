@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yo-goto/anki-one.git"
+    "url": "git+https://github.com/yo-goto/tools-for-one.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yo-goto/anki-one/issues"
+    "url": "https://github.com/yo-goto/tools-for-one/issues"
   },
-  "homepage": "https://github.com/yo-goto/anki-one#readme",
+  "homepage": "https://github.com/yo-goto/tools-for-one#readme",
   "devDependencies": {
     "@proofdict/textlint-rule-proofdict": "^3.1.2",
     "textlint": "^12.1.1",

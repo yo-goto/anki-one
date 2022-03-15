@@ -70,7 +70,7 @@ params:
 
   # githubでの編集提案    
   editPost:
-    URL: "https://github.com/yo-goto/anki-one/tree/main/content"
+    URL: "https://github.com/yo-goto/tools-for-one/tree/main/content"
     Text: "Githubで修正"
     appendFilePath: true # to append file path to Edit link  
   # for search

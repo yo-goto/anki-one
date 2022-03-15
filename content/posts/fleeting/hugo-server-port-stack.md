@@ -56,5 +56,5 @@ Watching for config changes in /Users/roshi/Documents/ALL-Repo/hugo-blog/hugo-re
 Environment: "development"
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/anki-one/ (bind address 127.0.0.1)
+Web Server is available at http://localhost:1313/tools-for-one/ (bind address 127.0.0.1)
 ```

@@ -48,7 +48,7 @@ window.onload = function () {
             }
         }
     };
-    xhr.open("GET", "https://yo-goto.github.io/anki-one/index.json");
+    xhr.open("GET", "https://yo-goto.github.io/tools-for-one/index.json");
     xhr.send();
 }
 
