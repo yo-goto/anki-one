@@ -7,7 +7,7 @@ cover:
     image: "data/thumbnail_mazuankiyorihajimeyo.jpg" # image path/url
     hidden: true # only hide on current single page
 aliases: [記事_まずAnkiより始めよ]
-tags: [" #anki ", " #SRS "]
+tags: [anki, SRS]
 ---
 
 ![サムネイル](data/thumbnail_mazuankiyorihajimeyo.jpg)

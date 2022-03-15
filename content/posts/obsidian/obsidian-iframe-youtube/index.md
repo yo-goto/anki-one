@@ -2,7 +2,7 @@
 title: "iFrame Youtube Link"
 date: 2020-11-01
 description: "ObsidianにYoutubeの動画を埋め込む方法"
-tags: [" #obsidian "]
+tags: [obsidian]
 aliases: [記事_ObsidianにYoutubeの動画を埋め込む方法]
 ---
 

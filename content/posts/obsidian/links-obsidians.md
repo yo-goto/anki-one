@@ -2,7 +2,7 @@
 title: "obsidian PKM Map"
 date: 2020-11-01
 description: "ObsidianにYoutubeの動画を埋め込む方法"
-tags: [" #PKM ", " #obsidian "]
+tags: [PKM, obsidian]
 aliases: [ pkm map, Obsidian PKM Map ]
 ---
 

@@ -6,7 +6,7 @@ cover:
     image: "data/tts_audiio_thumbnail.jpg" # image path/url
     alt: "サムネイル画像" # alt text
     hidden: true # only hide on current single page  
-tags: [" #anki ", " #study/english ", " #iphone ", " #mac "]
+tags: [anki, study/english, iphone, mac]
 aliases: [ AnkiでTTS, TTS, Text to speech ]
 ---
 

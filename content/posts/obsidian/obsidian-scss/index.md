@@ -2,7 +2,7 @@
 title: "Custom SCSS/SASS"
 date: 2020-12-26
 description: "ObsidianのスタイルをSCSSで作る"
-tags: [" #obsidian "]
+tags: [obsidian]
 alias: [ObsidianのスタイルをSCSSで作る]
 ---
 

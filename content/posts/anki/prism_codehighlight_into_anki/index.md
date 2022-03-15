@@ -8,7 +8,7 @@ cover:
     caption: "prism.jsを入れる" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-tags: [" #anki ", " #prism "]
+tags: [anki, prism]
 ---
 
 [Prism.js](https://prismjs.com/index.html)を利用して Anki で次のようなコードハイライトを実現する。

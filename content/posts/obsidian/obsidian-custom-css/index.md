@@ -2,7 +2,7 @@
 title: "Custom CSS"
 date: 2020-11-01
 description: "Obsidianのスタイルを改造する"
-tags: [" #obsidian "]
+tags: [obsidian]
 aliases: [記事_Obsidianのスタイルを改造する]
 ---
 

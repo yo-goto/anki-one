@@ -2,9 +2,8 @@
 title: "Anki Another Version"
 date: 2021-10-28
 description: "Ankiの別バージョンをインストールする"
-tags: [" #anki "]
+tags: [anki]
 aliases: ["Ankiの別バージョンとインストールについて"]
-categories: ["anki"]
 ---
 
 ## 概要
