@@ -3,11 +3,15 @@ title: "TTS (Text To Speech)"
 date: 2020-11-14
 description: "デバイスのTTSを利用してAnkiで合成音声に発音させる"
 cover:
-    image: "data/tts_audiio_thumbnail.jpg" # image path/url
-    alt: "サムネイル画像" # alt text
-    hidden: true # only hide on current single page  
+  alt: "サムネイル画像"
+  hidden: true
+  image: "data/tts_audiio_thumbnail.jpg"
 tags: [anki, study/english, iphone, mac]
-aliases: [ AnkiでTTS, TTS, Text to speech ]
+aliases:
+  - 記事_デバイスのTTSを利用してAnkiで合成音声に発音させる
+  - AnkiでTTS
+  - TTS
+  - Text to speech
 ---
 
 ![サムネイル](data/tts_audiio_thumbnail.jpg#center)

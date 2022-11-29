@@ -1,9 +1,10 @@
 ---
 title: "favicon.io というサイト"
 date: 2022-03-14
-description: "簡単にファビコンを作成できるサイト"
+modified: 2022-11-02
 tags: [Hugo, favicon, site]
-aliases: []
+aliases: 
+description: "簡単にファビコンを作成できるサイト"
 ---
 
 favicon って意外としっかりつくるのが面倒だったりするが、次のサイトを見つけた。
@@ -33,4 +34,3 @@ static
 ├── favicon.ico
 └── site.webmanifest
 ```
-

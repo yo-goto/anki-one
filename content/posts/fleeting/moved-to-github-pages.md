@@ -2,7 +2,7 @@
 title: "Github Pages に移行した"
 date: 2022-03-14
 description: "Github Pages で Hugo ブログをホストし、Github Actions で自動デプロイをやってみた"
-tags: [Hugo, git/github/pages, textlint]
+tags: [Hugo, git/GitHub/pages, textlint]
 ---
 
 「アンキヨリハジメヨ」のドメイン更新を忘れたため、個人ブログとして新しく作り直した。
@@ -24,8 +24,7 @@ Zenn や Qiita の記事を参考にしたが、変に応用したりしてい�
 - [Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action)
 - [GitHub Actions による GitHub Pages への自動デプロイ](https://qiita.com/peaceiris/items/d401f2e5724fdcb0759d#user-and-organization-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E5%A0%B4%E5%90%88)
 
-デプロイキーやら ssh やら secret やらを結局作成せずに済んだのはシンプルな構成だったからかもしれない。たぶん、やっていたら二倍の時間がかかっていたと思う。
-
+デプロイキーやら ssh やら secret やらを結局作成せずに済んだのはシンプルな構成だったからかもしれない。
 
 ## Github Actions
 
@@ -75,8 +74,8 @@ jobs:
           publish_dir: ./public
 ```
 
-
 Github 側ではリポジトリの Settings > Pages の項目に移動して、 "Source" のところを `Branch: gh-pages` を選択して Save する。
+
 - [簡単に Hugo サイトを GitHub Pages で（ 自動ビルドして ）公開する方法 - Qiita](https://qiita.com/normalsalt/items/406b31d2071db128bf0f)
 
 これで終わり。`gh-pages` のブランチに公開用のファイルが生成されてプッシュのたびにデプロイできる。
@@ -87,11 +86,10 @@ Github 側ではリポジトリの Settings > Pages の項目に移動して、 
 
 ```json:.textlintrc
 {
-    "rules": {
-        "ja-technical-writing/ja-no-weak-phrase": false
-    }
+  "rules": {
+    "ja-technical-writing/ja-no-weak-phrase": false
+  }
 }
 ```
 
 textlint については長い付き合いになりそうなので、今後も研究していきたいと思う。
-

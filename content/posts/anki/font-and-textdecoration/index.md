@@ -7,7 +7,7 @@ cover:
     alt: "サムネイル画像" # alt text
     hidden: true # only hide on current single page
 tags: [anki, font]
-aliease: [記事_フォントと文字装飾にまつわるお話]
+aliases: 記事_フォントと文字装飾にまつわるお話
 ---
 
 ![header](data/head_fonts.jpg)

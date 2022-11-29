@@ -7,7 +7,7 @@ cover:
     alt: "サムネイル" # alt text
     hidden: true # only hide on current single page
 tags: [anki]
-aliases: [記事_iframeによる画像検索窓で視覚的に単語を覚える]
+aliases: 記事_iframeによる画像検索窓で視覚的に単語を覚える
 ---
 
 ![header](data/head_iframe.jpg)

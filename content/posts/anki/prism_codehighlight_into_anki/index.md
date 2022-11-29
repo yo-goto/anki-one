@@ -3,36 +3,35 @@ title: "Prism.js"
 date: 2021-09-15
 description: "Anki に prism.js を入れる"
 cover:
-    image: "data/prism-0-view.png" # サムネイル画像画像 path/url
-    alt: "prism.js image" # alt text
-    caption: "prism.jsを入れる" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+  image: "data/prism-0-view.png" # サムネイル画像画像 path/url
+  alt: "prism.js image" # alt text
+  caption: "prism.jsを入れる" # display caption under cover
+  relative: false # when using page bundles set this to true
+  hidden: true # only hide on current single page
 tags: [anki, prism]
+aliases: 記事_Anki に prism.js を入れる
 ---
 
 [Prism.js](https://prismjs.com/index.html)を利用して Anki で次のようなコードハイライトを実現する。
 
-![](data/prism-0-view.png)
+![prsim-0](data/prism-0-view.png)
 
 [Prism](https://prismjs.com/index.html)の公式サイトにアクセスして「Download」ボタンを押す。
 
 ![prism-1](data/prism-1.png)
 
-
 次に利用する言語やテーマ、プラグインの選択を行う。
 
-![](data/prism-2_選択画面.png)
-
+![prism-2](data/prism-2_選択画面.png)
 
 - Compression level : Minified version をチェック
 - Themes : 好きなハイライトテーマを選択
 - Languages : Select/unselect all をチェックしてすべての言語のチェックを入れる
 
-![](data/prism-3_plugin.png)
-
+![prism-3](data/prism-3_plugin.png)
 
 好きなプラグインにチェックを入れる。自分の場合には次のプラグインにチェックした。
+
 - Line Numbers
 - Autolinker
 - Show Language
@@ -44,7 +43,7 @@ tags: [anki, prism]
 - Treeview
 - Match Braces
 
-![](data/prism-4_download.png)
+![prism-4](data/prism-4_download.png)
 
 「DOWNLOAD JS」と「DOWNLOAD CSS」をクリックして `prism.js` と `prism.css` をダウンロードする。
 
@@ -52,7 +51,7 @@ Anki にデータを消されないように名前の頭にアンダースコア
 
 Anki を閉じた状態で `/Users/User_Name/Library/Application Support/Anki2/Profile_Name/collection.media` にその 2 つのファイルをペーストする。
 
-![](data/prism-5_files.png)
+![prism-5](data/prism-5_files.png)
 
 Anki を起動して使用するノートタイプを編集する。
 
@@ -63,7 +62,7 @@ Anki を起動して使用するノートタイプを編集する。
 <script async type="text/javascript" src="_prism.js" charset="utf-8"></script>
 ```
 
-![](data/prism-7_code.png)
+![prism-7](data/prism-7_code.png)
 
 フィールドに次のコードを書く。`language-xxxx` の xxxx にはなんの言語か指定する。JavaScript なら `language-js` とする。
 
@@ -73,10 +72,8 @@ Anki を起動して使用するノートタイプを編集する。
 </code></pre>
 ```
 
-![](data/prism-6_code.png)
+![prism-6](data/prism-6_code.png)
 
 xxxx の部分は[次から確認できる](https://prismjs.com/index.html)
 
-![](data/prism-8_lang.png)
-
-
+![prism-7](data/prism-8_lang.png)

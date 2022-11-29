@@ -6,8 +6,8 @@ canonicalURL: "https://canonical.url/to/page"
 cover:
     image: "data/thumbnail_mazuankiyorihajimeyo.jpg" # image path/url
     hidden: true # only hide on current single page
-aliases: [記事_まずAnkiより始めよ]
 tags: [anki, SRS]
+aliases: 記事_まずAnkiより始めよ
 ---
 
 ![サムネイル](data/thumbnail_mazuankiyorihajimeyo.jpg)

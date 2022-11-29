@@ -1,15 +1,18 @@
 ---
 title: "Hugo の localhost 番号が変わる現象"
 date: 2022-03-14
+modified: 2022-11-02
 tags: [Hugo]
-aliases: ["Hugoのパスとの日付けについて"]
+aliases:
+  - "Hugoのパスとの日付けについて"
+  - 占有ポートの開け方
 ---
 
 `hugo server` コマンドを使用した際にデフォルトで `localhost:1313` を使用して `http://localhost:1313/~` でプレビューを見られるはずだが、毎回ポート番号が変わってしまって開き直す必要があったので調べてみた。
 
 次の記事が参考になった。
 
-- [【Mac】占有portの調べ方と空け方](https://zenn.dev/json_hardcoder/articles/5925798786a07a)
+- [【Mac】占有 port の調べ方と空け方](https://zenn.dev/json_hardcoder/articles/5925798786a07a)
 
 ```shell
 ❯ sudo lsof -P -i:1313
@@ -24,7 +27,7 @@ hugo    67762 roshi  260u  IPv4 0x2c5a9c1143e13151      0t0  TCP localhost:1313-
 hugo    67762 roshi  261u  IPv4 0x2c5a9c1141d0bb69      0t0  TCP localhost:1313->localhost:49802 (CLOSED)
 ```
 
-- [sudo kill -9でプロセスを強制終了する - Qiita](https://qiita.com/nasuvitz/items/412a60b1e5e931cff24e)
+- [sudo kill -9 でプロセスを強制終了する - Qiita](https://qiita.com/nasuvitz/items/412a60b1e5e931cff24e)
 
 PID を指定して `sudo kill -9` するとプロセスを強制終了できる。
 

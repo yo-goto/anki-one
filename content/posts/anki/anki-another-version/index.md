@@ -1,9 +1,12 @@
 ---
 title: "Anki Another Version"
-date: 2021-10-28
 description: "Ankiの別バージョンをインストールする"
+date: 2021-10-28
+modified: 2022-09-15
 tags: [anki]
-aliases: ["Ankiの別バージョンとインストールについて"]
+aliases:
+  - Ankiの別バージョンとインストールについて
+  - 記事_Ankiの別バージョンをインストールする
 ---
 
 ## 概要
